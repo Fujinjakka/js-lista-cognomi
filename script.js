@@ -15,4 +15,16 @@ console.log(listaCognomi);
 
 
 document.getElementById("prova").innerHTML = listaCognomi.sort();
-document.getElementById("prova2").innerHTML = ;
+console.log(listaCognomi);
+
+
+var posizione;
+
+for (var i = 0; i < listaCognomi.length; i++) {
+  if (listaCognomi[i] == cognomeUtente) {
+    posizione = i;
+  }
+}
+
+document.getElementById("prova2").innerHTML = "posizione umana:" + (posizione + 1);
+console.log(posizione);
